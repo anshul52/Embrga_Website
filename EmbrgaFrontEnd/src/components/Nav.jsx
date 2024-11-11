@@ -1,0 +1,114 @@
+import React, { useState } from "react";
+import { MdOutlineCancel } from "react-icons/md";
+import { RiMenu3Fill } from "react-icons/ri";
+
+const Nav = () => {
+  const [respoNavSlide, setrespoNavSlide] = useState(false);
+  return (
+    <>
+      <nav class="sm:bg-white sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full px-10">
+          <a
+            href="https://embrga.com/"
+            class="sm:flex items-center  hidden space-x-3 rtl:space-x-reverse"
+          >
+            {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
+            <span class="self-center text-2xl font-semibold whitespace-nowrap ">
+              Embrga
+            </span>
+          </a>
+          <div class="flex sm:hidden  justify-between items-center w-full ">
+            {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
+            <span class="self-center text-2xl   font-semibold whitespace-nowrap ">
+              Embrga
+            </span>
+            {!respoNavSlide ? (
+              <RiMenu3Fill
+                className="scale-[2]"
+                onClick={() => setrespoNavSlide(true)}
+              />
+            ) : (
+              <MdOutlineCancel
+                className="scale-[2]"
+                onClick={() => setrespoNavSlide(false)}
+              />
+            )}
+          </div>
+
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-[12px]"
+            id="navbar-sticky"
+          >
+            <ul class="flex text-[14px]  font-medium">
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 px-7  text-gray-900 "
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-7 text-gray-400">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-7 text-gray-400">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/enroll" class="block py-2 px-7 text-gray-400">
+                  Enroll Now
+                </a>
+              </li>
+            </ul>
+            <button className="ml-20 bg-[#061a3c] text-[#fff] rounded-[50px] py-[10px] px-7 ">
+              Let,s do it!
+            </button>
+          </div>
+        </div>
+        {respoNavSlide && (
+          <div className=" h-[100vh] bg-gray-300 w-full">
+            <div
+              class="items-center justify-between  w-full md:flex md:w-auto md:order-1 text-[22px]"
+              id="navbar-sticky"
+            >
+              <ul class="flex text-[24px]  font-medium flex-col">
+                <li>
+                  <a
+                    href="/"
+                    class="block py-2 px-7  text-gray-900 "
+                    aria-current="page"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-7 text-gray-400">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-7 text-gray-400">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/enroll" class="block py-2 px-7 text-gray-400">
+                    Enroll Now
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
+      </nav>
+      <nav className=" h-[10vh] w-full"></nav>
+    </>
+  );
+};
+
+export default Nav;
