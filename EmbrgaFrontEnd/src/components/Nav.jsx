@@ -49,7 +49,7 @@ const Nav = () => {
                   Home
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" class="block py-2 px-7 text-gray-400">
                   About
                 </a>
@@ -58,7 +58,7 @@ const Nav = () => {
                 <a href="#" class="block py-2 px-7 text-gray-400">
                   Services
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://forms.gle/YSxtwB1JFjuEsbSr5"
@@ -91,16 +91,19 @@ const Nav = () => {
                 </li>
                 <li>
                   <a href="#" class="block py-2 px-7 text-gray-400">
-                    About
+                    {/* About */}
                   </a>
                 </li>
                 <li>
                   <a href="#" class="block py-2 px-7 text-gray-400">
-                    Services
+                    {/* Services */}
                   </a>
                 </li>
                 <li>
-                  <a href="/enroll" class="block py-2 px-7 text-gray-400">
+                  <a
+                    href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+                    class="block py-2 px-7 text-gray-400"
+                  >
                     Enroll Now
                   </a>
                 </li>

@@ -18,7 +18,7 @@ const Homepart5 = () => {
       </div>
       <div className="sm:w-[50%] w-full flex h-full text-[#061a3c] p-1">
         <div className="  sm:p-10 h-full w-full">
-          <h2 className="text-[35px] font-semibold mb-7">Why Choose Embgra?</h2>
+          <h2 className="text-[35px] font-semibold mb-7">Why Choose Embrga?</h2>
 
           <section className="feature mb-4">
             <h3 className="flex items-center gap-2 text-[15px] font-semibold">
