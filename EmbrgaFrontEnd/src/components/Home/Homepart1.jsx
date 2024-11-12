@@ -9,7 +9,7 @@ const Homepart1 = () => {
           to
           <span className="italic text-[#6946e4]"> learn </span>
           and
-          <span className="italic text-[#ffb802]"> play</span> with
+          <span className="italic text-[#ffb802]"> play</span>
           <br className="sm:block hidden" /> with code!
         </h1>
         <p className="text-[15px] text-[#808080] font-medium mt-10 text-center">
