@@ -31,11 +31,11 @@ const Homepart2 = () => {
           </div>
           <div className="w-full h-[55%]">
             <h1 className="text-[40px]">
-              Fun <br /> <span className="italic">Quiz</span>
+              Job-Ready <br /> <span className="italic">Skills </span>
             </h1>
             <p className="text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              asperiores nostrum magnam.
+              Our program emphasizes job-ready skills, focusing on the tools,
+              languages, and frameworks most in demand in the industry.
             </p>
           </div>
         </div>
@@ -49,11 +49,12 @@ const Homepart2 = () => {
           </div>
           <div className="w-full h-[55%] text-[#fff]">
             <h1 className="text-[40px]">
-              Creative <br /> <span className="italic">Activities</span>
+              Expert <br /> <span className="italic">Mentors</span>
             </h1>
             <p className="text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              asperiores nostrum magnam.
+              Learn from industry professionals with years of experience.Our
+              mentors are seasoned developers and engineers with extensive
+              experience in top tech companies.
             </p>
           </div>
         </div>
@@ -67,11 +68,12 @@ const Homepart2 = () => {
           </div>
           <div className="w-full h-[55%]">
             <h1 className="text-[40px]">
-              Learn with <br /> <span className="italic">Games</span>
+              Real-World <br /> <span className="italic">Projects</span>
             </h1>
             <p className="text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              asperiores nostrum magnam.
+              Our program focuses on hands-on projects that simulate real-world
+              challenges, helping you apply what you've learned and build
+              portfolio-worthy work.
             </p>
           </div>
         </div>

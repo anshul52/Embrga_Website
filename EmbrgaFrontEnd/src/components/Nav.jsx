@@ -60,7 +60,10 @@ const Nav = () => {
                 </a>
               </li>
               <li>
-                <a href="/enroll" class="block py-2 px-7 text-gray-400">
+                <a
+                  href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+                  class="block py-2 px-7 text-gray-400"
+                >
                   Enroll Now
                 </a>
               </li>
