@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Homepart1 from "../components/Home/Homepart1";
-import Footer from "../components/footer";
+import Footer from "../components/Footer.jsx";
 
 const EnrollForm = () => {
   return (

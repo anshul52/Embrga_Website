@@ -5,7 +5,7 @@ import Homepart2 from "../components/Home/Homepart2";
 import Homepart3 from "../components/Home/Homepart3";
 import Homepart4 from "../components/Home/Homepart4";
 import Homepart5 from "../components/Home/Homepart5";
-import Footer from "../components/footer";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
