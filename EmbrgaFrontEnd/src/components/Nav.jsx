@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [respoNavSlide, setrespoNavSlide] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       <nav class="sm:bg-white sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
@@ -51,7 +53,11 @@ const Nav = () => {
                   onClick={() => {
                     navigate("/"), setrespoNavSlide(false);
                   }}
-                  class="block py-2 px-7  text-gray-900 cursor-pointer "
+                  class={`block py-2 px-7  ${
+                    location.pathname === "/"
+                      ? "text-gray-900"
+                      : "text-gray-400"
+                  } cursor-pointer `}
                   aria-current="page"
                 >
                   Home
@@ -62,7 +68,11 @@ const Nav = () => {
                   onClick={() => {
                     navigate("/courses"), setrespoNavSlide(false);
                   }}
-                  class="block py-2 px-7 text-gray-400 cursor-pointer"
+                  class={`block py-2 px-7  ${
+                    location.pathname === "/courses"
+                      ? "text-gray-900"
+                      : "text-gray-400"
+                  } cursor-pointer `}
                 >
                   Courses
                 </div>
@@ -98,7 +108,9 @@ const Nav = () => {
                     onClick={() => {
                       navigate("/"), setrespoNavSlide(false);
                     }}
-                    class="block py-2  pt-5 px-7  text-gray-400 cursor-pointer "
+                    class={`block py-2  pt-5 px-7  text-gray-400 cursor-pointer ${
+                      location.pathname === "/" ? "text-white" : "text-gray-400"
+                    }`}
                     aria-current="page"
                   >
                     Home
@@ -109,7 +121,11 @@ const Nav = () => {
                     onClick={() => {
                       navigate("/courses"), setrespoNavSlide(false);
                     }}
-                    class="block py-2 px-7 text-gray-400 cursor-pointer"
+                    class={`block py-2 px-7  ${
+                      location.pathname === "/courses"
+                        ? "text-white"
+                        : "text-gray-400"
+                    } cursor-pointer `}
                   >
                     Courses
                   </div>

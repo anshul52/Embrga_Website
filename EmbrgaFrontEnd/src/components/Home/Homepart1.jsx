@@ -24,7 +24,6 @@ const Homepart1 = () => {
             className="bg-[#6946e4] shadow-xl  text-[#fff] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5"
           >
             Get Started
-            {/* https://forms.gle/YSxtwB1JFjuEsbSr5 */}
           </a>
         </div>
         <img
@@ -36,12 +35,12 @@ const Homepart1 = () => {
         <img
           src="/home/playunderline.svg"
           alt=""
-          className="h-[20vh] w-[15vw] sm:block hidden absolute top-[32%] left-[60%] rotate-[10deg]"
+          className="h-[20vh] w-[15vw] sm:block hidden absolute top-[35%] left-[65%] rotate-[10deg]"
         />
         <img
           src="/home/learnunderline.svg"
           alt=""
-          className="h-[20vh] w-[15vw] absolute top-[32%] sm:block hidden left-[15%] rotate-[1deg]"
+          className="h-[20vh] w-[15vw] absolute top-[32%] sm:block hidden left-[24%] rotate-[1deg]"
         />
       </div>
     </div>

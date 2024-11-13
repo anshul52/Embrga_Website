@@ -52,7 +52,7 @@ const Footer = () => {
                     href="https://chat.whatsapp.com/L3LcRmeb1c66jxNWXNfg9y"
                     class="hover:underline"
                   >
-                    WhatsApps
+                    WhatsApp
                   </a>
                 </li>
               </ul>
