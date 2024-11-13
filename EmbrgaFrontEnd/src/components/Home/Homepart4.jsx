@@ -57,7 +57,7 @@ const Homepart4 = () => {
         </div>
         <button
           onClick={prevSlide}
-          className="absolute z-20 sm:top-[50%] top-[95%] outline-none left-14  px-4 py-4 rounded-full shadow-lg transition hover:bg-gray-300"
+          className="absolute  sm:top-[50%] top-[95%] outline-none left-14  px-4 py-4 rounded-full shadow-lg transition hover:bg-gray-300"
         >
           <MdArrowBackIos className="text-[#061a3c] text-[19px]" />
         </button>

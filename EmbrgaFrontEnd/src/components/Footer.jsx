@@ -41,18 +41,15 @@ const Footer = () => {
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://github.com/themesberg/Embrga"
+                    href="https://www.instagram.com/embrga/"
                     class="hover:underline "
                   >
-                    Github
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    class="hover:underline"
-                  >
-                    Discord
+                  <a href="#" class="hover:underline">
+                    LinkedIn
                   </a>
                 </li>
               </ul>
