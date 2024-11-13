@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [respoNavSlide, setrespoNavSlide] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <nav class="sm:bg-white sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
@@ -45,18 +47,25 @@ const Nav = () => {
           >
             <ul class="flex text-[14px]  font-medium">
               <li>
-                <a
-                  href="/"
-                  class="block py-2 px-7  text-gray-900 "
+                <div
+                  onClick={() => {
+                    navigate("/"), setrespoNavSlide(false);
+                  }}
+                  class="block py-2 px-7  text-gray-900 cursor-pointer "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </div>
               </li>
               <li>
-                <a href="/courses" class="block py-2 px-7 text-gray-400">
+                <div
+                  onClick={() => {
+                    navigate("/courses"), setrespoNavSlide(false);
+                  }}
+                  class="block py-2 px-7 text-gray-400 cursor-pointer"
+                >
                   Courses
-                </a>
+                </div>
               </li>
               {/* <li>
                 <a href="#" class="block py-2 px-7 text-gray-400">
@@ -66,7 +75,7 @@ const Nav = () => {
               <li>
                 <a
                   href="https://forms.gle/YSxtwB1JFjuEsbSr5"
-                  class="block py-2 px-7 text-gray-400"
+                  class="block py-2 px-7 text-gray-400 cursor-pointer"
                 >
                   Enroll Now
                 </a>
@@ -85,23 +94,30 @@ const Nav = () => {
             >
               <ul class="flex text-[17px] pl-3 font-medium flex-col">
                 <li>
-                  <a
-                    href="/"
-                    class="block py-2  pt-5 px-7  text-gray-400 "
+                  <div
+                    onClick={() => {
+                      navigate("/"), setrespoNavSlide(false);
+                    }}
+                    class="block py-2  pt-5 px-7  text-gray-400 cursor-pointer "
                     aria-current="page"
                   >
                     Home
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="/courses" class="block py-2 px-7 text-gray-400">
+                  <div
+                    onClick={() => {
+                      navigate("/courses"), setrespoNavSlide(false);
+                    }}
+                    class="block py-2 px-7 text-gray-400 cursor-pointer"
+                  >
                     Courses
-                  </a>
+                  </div>
                 </li>
                 <li>
                   <a
                     href="https://forms.gle/YSxtwB1JFjuEsbSr5"
-                    class="block py-2 px-7 text-gray-400"
+                    class="block py-2 px-7 text-gray-400 cursor-pointer"
                   >
                     Enroll Now
                   </a>
