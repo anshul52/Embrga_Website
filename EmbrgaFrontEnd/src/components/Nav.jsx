@@ -9,7 +9,7 @@ const Nav = () => {
       <nav class="sm:bg-white sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
         <div
           class={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#fff] ${
-            respoNavSlide ? "bg-gray-300" : "bg-[#fff]"
+            respoNavSlide ? "bg-gray-100" : "bg-[#fff]"
           } flex flex-wrap items-center justify-between mx-auto h-full sm:px-10`}
         >
           <a
@@ -53,12 +53,12 @@ const Nav = () => {
                   Home
                 </a>
               </li>
-              {/* <li>
-                <a href="#" class="block py-2 px-7 text-gray-400">
-                  About
+              <li>
+                <a href="/courses" class="block py-2 px-7 text-gray-400">
+                  Courses
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" class="block py-2 px-7 text-gray-400">
                   Services
                 </a>
@@ -94,7 +94,7 @@ const Nav = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 px-7 text-gray-400">
+                  <a href="/courses" class="block py-2 px-7 text-gray-400">
                     Courses
                   </a>
                 </li>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Homepart1 = () => {
   return (
-    <div className="w-full sm:min-h-[90vh] min-h-[60vh] flex items-center justify-center text-[#061a3c] px-[8%]">
+    <div className="w-full sm:min-h-[90vh]  flex items-center justify-center text-[#061a3c] px-[8%]">
       <div className="relative flex flex-col items-center justify-center">
         <h1 className="sm:text-[80px] text-[35px] text-center font-semibold">
           EMBRGA! The best place <br className="sm:block hidden" />
@@ -18,10 +18,14 @@ const Homepart1 = () => {
           level up with skills tech companies love. <br /> Join us and bring
           your ideas to life!
         </p>
-        <div className="text-[12px] font-light mt-5">
-          <button className="bg-[#6946e4] shadow-xl  text-[#fff] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5">
+        <div className="text-[12px] font-light mt-5 sm:mb-0 mb-10">
+          <a
+            href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+            className="bg-[#6946e4] shadow-xl  text-[#fff] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5"
+          >
             Get Started
-          </button>
+            {/* https://forms.gle/YSxtwB1JFjuEsbSr5 */}
+          </a>
         </div>
         <img
           src="/home/rings1.svg"

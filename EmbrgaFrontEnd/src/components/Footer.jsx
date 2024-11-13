@@ -19,12 +19,12 @@ const Footer = () => {
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
+                Contact Us
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="https://embrga.com/" class="hover:underline">
-                    Embrga
+                  <a href="https://embrga@gmail.com/" class="hover:underline">
+                    embrga@gmail.com
                   </a>
                 </li>
                 <li>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
+                Join Us
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
@@ -48,8 +48,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
-                    LinkedIn
+                  <a
+                    href="https://chat.whatsapp.com/L3LcRmeb1c66jxNWXNfg9y"
+                    class="hover:underline"
+                  >
+                    WhatsApps
                   </a>
                 </li>
               </ul>
