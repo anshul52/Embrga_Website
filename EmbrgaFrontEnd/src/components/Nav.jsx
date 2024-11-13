@@ -16,18 +16,25 @@ const Nav = () => {
             respoNavSlide ? "bg-gray-100" : "bg-[#fff]"
           } flex flex-wrap items-center justify-between mx-auto h-full sm:px-10`}
         >
-          <a
-            href="https://embrga.com/"
-            class="sm:flex items-center  hidden space-x-3 rtl:space-x-reverse"
+          <div
+            onClick={() => {
+              navigate("/"), setrespoNavSlide(false);
+            }}
+            class="sm:flex items-center cursor-pointer hidden space-x-3 rtl:space-x-reverse"
           >
             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
             <span class="self-center text-2xl font-semibold whitespace-nowrap ">
               Embrga
             </span>
-          </a>
+          </div>
           <div class="flex sm:hidden text-[#061a3c] justify-between items-center w-full px-7">
             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
-            <span class="self-center text-2xl   font-semibold whitespace-nowrap ">
+            <span
+              onClick={() => {
+                navigate("/"), setrespoNavSlide(false);
+              }}
+              class="self-center text-2xl cursor-pointer  font-semibold whitespace-nowrap "
+            >
               Embrga
             </span>
             {!respoNavSlide ? (
