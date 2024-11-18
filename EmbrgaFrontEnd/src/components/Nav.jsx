@@ -76,8 +76,8 @@ const Nav = () => {
                     navigate("/courses"), setrespoNavSlide(false);
                   }}
                   class={`block py-2 px-7  ${
-                    location.pathname === "/courses"
-                      ? "text-gray-900"
+                    location.pathname.includes("/courses")
+                      ? "text-gray-900 font-semibold"
                       : "text-gray-400"
                   } cursor-pointer `}
                 >
