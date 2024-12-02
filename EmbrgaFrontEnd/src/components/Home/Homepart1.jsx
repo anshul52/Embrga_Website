@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Homepart1 = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full sm:min-h-[90vh]  flex items-center justify-center text-[#061a3c] px-[8%]">
       <div className="relative flex flex-col items-center justify-center">
@@ -19,12 +21,14 @@ const Homepart1 = () => {
           your ideas to life!
         </p>
         <div className="text-[12px] font-light mt-5 sm:mb-0 mb-10">
-          <a
-            href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+          <div
+            onClick={() => {
+              navigate("/courses");
+            }}
             className="bg-[#6946e4] shadow-xl  text-[#fff] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5"
           >
             Get Started
-          </a>
+          </div>
         </div>
         <img
           src="/home/rings1.svg"

@@ -91,7 +91,7 @@ const Nav = () => {
               </li> */}
               <li>
                 <a
-                  href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+                  href="#"
                   class="block py-2 px-7 text-gray-400 cursor-pointer"
                 >
                   Enroll Now
@@ -139,7 +139,7 @@ const Nav = () => {
                 </li>
                 <li>
                   <a
-                    href="https://forms.gle/YSxtwB1JFjuEsbSr5"
+                    href="#"
                     class="block py-2 px-7 text-gray-400 cursor-pointer"
                   >
                     Enroll Now
