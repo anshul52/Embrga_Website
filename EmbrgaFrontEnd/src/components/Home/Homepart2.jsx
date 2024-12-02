@@ -15,7 +15,7 @@ const Homepart2 = () => {
           <button className="bg-[#6946e4] shadow-xl absolute text-[15px] top-10 left-[150px] rotate-45 text-[#fff] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5">
             Get Started
           </button>
-          <button className="bg-[#ffd25d] shadow-xl absolute text-[15px] top-20  text-[#000]  left-[60px] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5">
+          <button className="bg-[#ffb802] shadow-xl absolute text-[15px] top-20  text-[#000]  left-[60px] hover:scale-[1.2] ease-in duration-200  rounded-[50px] py-[10px] px-7 mr-5">
             Get Started
           </button>
         </div>
@@ -58,7 +58,7 @@ const Homepart2 = () => {
             </p>
           </div>
         </div>
-        <div className="sm:w-1/3 w-full h-full bg-[#ffd25d] rounded-[70px] p-7 overflow-hidden">
+        <div className="sm:w-1/3 w-full h-full bg-[#ffb802] rounded-[70px] p-7 overflow-hidden">
           <div className="w-full h-[45%] relative ">
             <img
               src="/home/dots.svg"

@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 const Homepart3 = () => {
   return (
     <div className="w-full min-h-[70vh] flex items-center justify-center   text-[#061a3c] px-[5%]  ">
-      <div className="flex sm:flex-row flex-col items-center h-[90%] w-full  rounded-[25px] gap-[4%] sm:py-[2%] py-[10%] bg-[#ffd25d]">
+      <div className="flex sm:flex-row flex-col items-center h-[90%] w-full  rounded-[25px] gap-[4%] sm:py-[2%] py-[10%] bg-[#fadd4c]">
         <div className="sm:w-[50%] w-full h-full flex items-center justify-center">
           <div className="h-[80%] rounded-[25px] w-[100%] overflow-hidden ">
             <img
@@ -16,7 +16,7 @@ const Homepart3 = () => {
         </div>
         <section class="sm:w-[50%] w-full h-full">
           <div class="home-section text-[#061a3c] h-full w-full  flex items-start justify-center flex-col px-5">
-            <h2 className="sm:text-[35px] text-[15px] font-semibold mb-7">
+            <h2 className="sm:text-[35px] text-[15px] font-semibold mb-7 ">
               Where Coding Becomes a Lifestyle{" "}
             </h2>
             <p className="text-[13px] mb-4">
