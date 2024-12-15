@@ -10,9 +10,9 @@ const Nav = () => {
   const location = useLocation();
   return (
     <>
-      <nav class="sm:bg-white sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
+      <nav class="sm:bg-[#151616] sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
         <div
-          class={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#fff] ${
+          class={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#151616] ${
             respoNavSlide ? "bg-gray-100" : "bg-[#fff]"
           } flex flex-wrap items-center justify-between mx-auto h-full sm:px-10`}
         >
@@ -23,7 +23,7 @@ const Nav = () => {
             class="sm:flex items-center cursor-pointer hidden space-x-3 rtl:space-x-reverse"
           >
             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
-            <span class="self-center text-2xl font-semibold whitespace-nowrap ">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Embrga
             </span>
           </div>
@@ -62,7 +62,7 @@ const Nav = () => {
                   }}
                   class={`block py-2 px-7  ${
                     location.pathname === "/"
-                      ? "text-gray-900"
+                      ? "text-[#1199B4]"
                       : "text-gray-400"
                   } cursor-pointer `}
                   aria-current="page"
@@ -77,7 +77,7 @@ const Nav = () => {
                   }}
                   class={`block py-2 px-7  ${
                     location.pathname.includes("/courses")
-                      ? "text-gray-900 font-semibold"
+                      ? "text-[#1199B4] font-semibold"
                       : "text-gray-400"
                   } cursor-pointer `}
                 >
@@ -97,8 +97,22 @@ const Nav = () => {
                   Enroll Now
                 </a>
               </li>
+              <li>
+                <div
+                  onClick={() => {
+                    navigate("/agency-services"), setrespoNavSlide(false);
+                  }}
+                  class={`block py-2 px-7  ${
+                    location.pathname.includes("/agency-services")
+                      ? "text-[#1199B4] font-semibold"
+                      : "text-gray-400"
+                  } cursor-pointer `}
+                >
+                  Our Agency
+                </div>
+              </li>
             </ul>
-            <button className="ml-20 bg-[#061a3c] text-[#fff] rounded-[50px] py-[10px] px-7 ">
+            <button className="ml-20 bg-[#1199B4] text-[#fff] rounded-[50px] py-[10px] px-7 ">
               Let,s do it!
             </button>
           </div>
