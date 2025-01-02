@@ -6,7 +6,7 @@ import CoursesList from "../components/Courses/CoursesList.jsx";
 const Courses = () => {
   return (
     <div className="min-h-[100vh] scrollbar bg-[#fff] w-full">
-      <Nav />
+      <Nav/>
       <CoursesList />
       <Footer />
     </div>
