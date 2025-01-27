@@ -10,9 +10,9 @@ const Nav = () => {
   const location = useLocation();
   return (
     <>
-      <nav class="sm:bg-[#151616] sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
+      <nav className="sm:bg-[#151616] sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
         <div
-          class={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#151616] ${
+          className={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#151616] ${
             respoNavSlide ? "bg-gray-100" : "bg-[#fff]"
           } flex flex-wrap items-center justify-between mx-auto h-full sm:px-10`}
         >
@@ -20,20 +20,20 @@ const Nav = () => {
             onClick={() => {
               navigate("/"), setrespoNavSlide(false);
             }}
-            class="sm:flex items-center cursor-pointer hidden space-x-3 rtl:space-x-reverse"
+            className="sm:flex items-center cursor-pointer hidden space-x-3 rtl:space-x-reverse"
           >
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
-            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
+            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo"> */}
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Embrga
             </span>
           </div>
-          <div class="flex sm:hidden text-[#061a3c] justify-between items-center w-full px-7">
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"> */}
+          <div className="flex sm:hidden text-[#061a3c] justify-between items-center w-full px-7">
+            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo"> */}
             <span
               onClick={() => {
                 navigate("/"), setrespoNavSlide(false);
               }}
-              class="self-center text-2xl cursor-pointer  font-semibold whitespace-nowrap "
+              className="self-center text-2xl cursor-pointer  font-semibold whitespace-nowrap "
             >
               Embrga
             </span>
@@ -51,16 +51,16 @@ const Nav = () => {
           </div>
 
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-[12px]"
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-[12px]"
             id="navbar-sticky"
           >
-            <ul class="flex text-[14px]  font-medium">
+            <ul className="flex text-[14px]  font-medium">
               <li>
                 <div
                   onClick={() => {
                     navigate("/"), setrespoNavSlide(false);
                   }}
-                  class={`block py-2 px-7  ${
+                  className={`block py-2 px-7  ${
                     location.pathname === "/"
                       ? "text-[#1199B4]"
                       : "text-gray-400"
@@ -75,7 +75,7 @@ const Nav = () => {
                   onClick={() => {
                     navigate("/courses"), setrespoNavSlide(false);
                   }}
-                  class={`block py-2 px-7  ${
+                  className={`block py-2 px-7  ${
                     location.pathname.includes("/courses")
                       ? "text-[#1199B4] font-semibold"
                       : "text-gray-400"
@@ -85,14 +85,14 @@ const Nav = () => {
                 </div>
               </li>
               {/* <li>
-                <a href="#" class="block py-2 px-7 text-gray-400">
+                <a href="#" className="block py-2 px-7 text-gray-400">
                   Services
                 </a>
               </li> */}
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-7 text-gray-400 cursor-pointer"
+                  className="block py-2 px-7 text-gray-400 cursor-pointer"
                 >
                   Enroll Now
                 </a>
@@ -102,7 +102,7 @@ const Nav = () => {
                   onClick={() => {
                     navigate("/agency-services"), setrespoNavSlide(false);
                   }}
-                  class={`block py-2 px-7  ${
+                  className={`block py-2 px-7  ${
                     location.pathname.includes("/agency-services")
                       ? "text-[#1199B4] font-semibold"
                       : "text-gray-400"
