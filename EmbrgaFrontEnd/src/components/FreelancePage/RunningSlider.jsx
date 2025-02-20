@@ -26,7 +26,7 @@ const RunningSlider = () => {
                 {text?.title}
               </p>
               <p className="whitespace-nowrap text-xl  text-blue-500 mx-4">
-                <PiStarFourFill className="text-yellow-200" />
+                <PiStarFourFill className="text-customGolden" />
               </p>
             </>
           );

@@ -10,10 +10,10 @@ const Nav = () => {
   const location = useLocation();
   return (
     <>
-      <nav className="sm:bg-[#151616] sm:h-[10vh] h-[8vh] fixed w-full z-20 top-0 start-0  bg-white">
+      <nav className="bg-customBlack sm:h-[10vh] h-[8vh] fixed w-full z-40 top-0 start-0">
         <div
-          className={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 sm:bg-[#151616] ${
-            respoNavSlide ? "bg-gray-100" : "bg-[#fff]"
+          className={`max-w-screen-xl sm:border-none border-b-[1.2px] border-b-gray-400 bg-customBlack ${
+            respoNavSlide ? "bg-customBlack" : "bg-[#fff]"
           } flex flex-wrap items-center justify-between mx-auto h-full sm:px-10`}
         >
           <div
@@ -22,29 +22,27 @@ const Nav = () => {
             }}
             className="sm:flex items-center cursor-pointer hidden space-x-3 rtl:space-x-reverse"
           >
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo"> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Embrga
             </span>
           </div>
-          <div className="flex sm:hidden text-[#061a3c] justify-between items-center w-full px-7">
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo"> */}
+          <div className="flex  sm:hidden text-[#061a3c] justify-between items-center w-full px-7">
             <span
               onClick={() => {
                 navigate("/"), setrespoNavSlide(false);
               }}
-              className="self-center text-2xl cursor-pointer  font-semibold whitespace-nowrap "
+              className="self-center text-2xl cursor-pointer font-semibold whitespace-nowrap text-white"
             >
               Embrga
             </span>
             {!respoNavSlide ? (
               <RiMenu3Fill
-                className="scale-[2]"
+                className="scale-[2] text-white"
                 onClick={() => setrespoNavSlide(true)}
               />
             ) : (
               <MdOutlineCancel
-                className="scale-[2]"
+                className="scale-[2] text-white"
                 onClick={() => setrespoNavSlide(false)}
               />
             )}
@@ -118,7 +116,7 @@ const Nav = () => {
           </div>
         </div>
         {respoNavSlide && (
-          <div className=" h-[100vh] bg-[#061a3c]/100 w-full z-[99]">
+          <div className="h-[100vh] bg-customBlack w-full z-[99]">
             <div
               class="items-center justify-between  w-full md:flex md:w-auto md:order-1 text-[22px]"
               id="navbar-sticky"

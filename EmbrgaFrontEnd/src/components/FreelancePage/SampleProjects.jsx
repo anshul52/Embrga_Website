@@ -61,42 +61,42 @@ const SampleProjects = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-100 dark:bg-gray-900">
+    <section className="py-12 relative">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white text-center mb-6">
+        <h2 className="text-4xl font-bold text-gray-800 dark:text-white text-center mb-6">
           Sample Work
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => {
-            const screenshotURL = project.liveDemo
-              ? `https://image.thum.io/get/width/600/crop/800/${project.liveDemo}`
+            const screenshotURL = project?.liveDemo
+              ? `https://image.thum.io/get/width/600/crop/800/${project?.liveDemo}`
               : "https://via.placeholder.com/400";
 
             return (
               <div
                 key={index}
-                className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-2xl transition-transform transform hover:scale-105"
+                className="p-6  bg-gradient-to-r from-[#00121C] via-[#01121A] via-[#01121A] via-[#02121a] via-[#02202B] to-[#11202e] shadow-lg rounded-2xl transition-transform transform hover:scale-105"
               >
                 <img
                   src={screenshotURL}
-                  alt={project.title}
+                  alt={project?.title}
                   className="w-full h-48 object-cover rounded-xl"
                 />
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-200 mt-4">
-                  {project.title}
+                  {project?.title}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mt-2">
-                  {project.description}
+                  {project?.description}
                 </p>
                 <span className="text-sm text-gray-500 dark:text-gray-400 mt-2 block">
-                  Tech Stack: {project.techStack}
+                  Tech Stack: {project?.techStack}
                 </span>
-                {project.liveDemo && (
+                {project?.liveDemo && (
                   <a
-                    href={project.liveDemo}
+                    href={project?.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-block text-blue-600 dark:text-blue-400 hover:underline"
+                    className="mt-4 inline-block text-[#1199B4] hover:underline"
                   >
                     Live Demo →
                   </a>
@@ -106,6 +106,7 @@ const SampleProjects = () => {
           })}
         </div>
       </div>
+      <div className="bg-[#31587F] sm:h-[50vh] sm:w-[50vh] h-[20vh] w-[20vh] sm:blur-[100px] blur-[50px] rounded-[50%] absolute sm:top-[35%] top-[25%] right-[-17%] z-20"></div>
     </section>
   );
 };

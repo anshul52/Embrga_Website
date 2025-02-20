@@ -9,13 +9,13 @@ import Footer from "../components/Footer.jsx";
 
 const FreelancePage = () => {
   return (
-    <main className="min-h-screen kanit-medium scrollbar bg-customBlack w-full">
+    <main className="min-h-screen kanit-medium scrollbar bg-customBlack w-full overflow-hidden">
       <Nav />
       <Header />
       <RunningSlider />
       <Services />
       <SampleProjects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </main>
   );
