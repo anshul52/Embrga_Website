@@ -7,9 +7,9 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        // customBlack: "#151616",
         customBlack: "#000308",
         customGolden: "#FEC66D",
+        customSkyBlue: "#1199B4",
       },
       animation: {
         marquee: "marquee 20s linear infinite",

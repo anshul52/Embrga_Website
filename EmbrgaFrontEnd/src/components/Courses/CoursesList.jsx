@@ -3,7 +3,7 @@ import CourseCard from "./CourseCard";
 
 const CoursesList = () => {
   return (
-    <div className="min-h-[100vh] scrollbar bg-[#fff] w-full p-10  grid sm:grid-cols-4 grid-row-4 gap-4">
+    <div className="min-h-[100vh] scrollbar  w-full p-10  grid sm:grid-cols-4 grid-row-4 gap-4">
       <CourseCard
         title={"MERN stack "}
         desc={

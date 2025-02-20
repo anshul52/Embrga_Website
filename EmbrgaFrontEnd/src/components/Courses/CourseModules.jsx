@@ -58,32 +58,27 @@ const CourseModules = () => {
 
   return (
     <div className="min-h-screen  p-8">
-      <h1 className="text-2xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+      <h1 className="text-2xl font-extrabold text-center mb-12 text-white">
         Course Modules
       </h1>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {modules.map((module, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group"
+            className="relative bg-gradient-to-r from-[#00121C] via-[#01121A] via-[#01121A] via-[#02121a] via-[#02202B] to-[#11202e] rounded-xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 group"
           >
-            <div className="absolute inset-x-0 -top-2 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 group-hover:h-2 transition-all duration-300"></div>
-            <h2 className="text-2xl font-bold mb-4 text-indigo-700 group-hover:text-indigo-900">
+            <div className="absolute inset-x-0 -top-2 h-1 bg-gradient-to-r from-customSkyBlue to-customSkyBlue group-hover:h-2 transition-all duration-300"></div>
+            <h2 className="text-2xl font-bold mb-4 text-customSkyBlue group-hover:text-customSkyBlue">
               {module.title}
             </h2>
-            <ul className="space-y-2 text-gray-600 group-hover:text-gray-800">
+            <ul className="space-y-2 text-white">
               {module.topics.map((topic, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-blue-500 group-hover:text-blue-700">
-                    ●
-                  </span>
+                  <span className="mr-2 text-customSkyBlue">●</span>
                   {topic}
                 </li>
               ))}
             </ul>
-            {/* <div className="mt-4 text-sm text-right text-blue-500 font-semibold group-hover:text-blue-700 transition-colors">
-              Learn More →
-            </div> */}
           </div>
         ))}
       </div>

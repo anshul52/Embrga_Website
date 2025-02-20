@@ -63,8 +63,9 @@ const SampleProjects = () => {
   return (
     <section className="py-12 relative">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white text-center mb-6">
-          Sample Work
+        <h2 className="text-6xl font-bold py-7 bg-gray-700 text-transparent bg-clip-text bg-gradient-to-r from-customSkyBlue to-white text-center mb-6">
+          Projects{" "}
+          <span className="text-white font-normal">, we are proud of</span>
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => {
@@ -96,7 +97,7 @@ const SampleProjects = () => {
                     href={project?.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-block text-[#1199B4] hover:underline"
+                    className="mt-4 inline-block text-customSkyBlue hover:underline"
                   >
                     Live Demo →
                   </a>

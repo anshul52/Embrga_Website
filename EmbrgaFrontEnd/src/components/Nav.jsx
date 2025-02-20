@@ -60,7 +60,7 @@ const Nav = () => {
                   }}
                   className={`block py-2 px-7  ${
                     location.pathname === "/"
-                      ? "text-[#1199B4]"
+                      ? "text-customSkyBlue font-semibold"
                       : "text-gray-400"
                   } cursor-pointer `}
                   aria-current="page"
@@ -75,7 +75,7 @@ const Nav = () => {
                   }}
                   className={`block py-2 px-7  ${
                     location.pathname.includes("/courses")
-                      ? "text-[#1199B4] font-semibold"
+                      ? "text-customSkyBlue font-semibold"
                       : "text-gray-400"
                   } cursor-pointer `}
                 >
@@ -102,7 +102,7 @@ const Nav = () => {
                   }}
                   className={`block py-2 px-7  ${
                     location.pathname.includes("/agency-services")
-                      ? "text-[#1199B4] font-semibold"
+                      ? "text-customSkyBlue font-semibold"
                       : "text-gray-400"
                   } cursor-pointer `}
                 >
@@ -110,7 +110,7 @@ const Nav = () => {
                 </div>
               </li>
             </ul>
-            <button className="ml-20 bg-[#1199B4] text-[#fff] rounded-[50px] py-[10px] px-7 ">
+            <button className="ml-20 bg-customSkyBlue text-[#fff] rounded-[50px] py-[10px] px-7 ">
               Let,s do it!
             </button>
           </div>
@@ -127,8 +127,10 @@ const Nav = () => {
                     onClick={() => {
                       navigate("/"), setrespoNavSlide(false);
                     }}
-                    class={`block py-2  pt-5 px-7  text-gray-400 cursor-pointer ${
-                      location.pathname === "/" ? "text-white" : "text-gray-400"
+                    class={`block py-2  pt-5 px-7 cursor-pointer ${
+                      location.pathname === "/"
+                        ? "text-customSkyBlue"
+                        : "text-gray-400"
                     }`}
                     aria-current="page"
                   >
@@ -142,9 +144,9 @@ const Nav = () => {
                     }}
                     class={`block py-2 px-7  ${
                       location.pathname === "/courses"
-                        ? "text-white"
+                        ? "text-customSkyBlue"
                         : "text-gray-400"
-                    } cursor-pointer `}
+                    } cursor-pointer`}
                   >
                     Courses
                   </div>
@@ -158,9 +160,19 @@ const Nav = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-[1px] px-7 text-gray-400">
-                    {/* Services */}
-                  </a>
+                  <div
+                    onClick={() => {
+                      navigate("/agency-services"), setrespoNavSlide(false);
+                    }}
+                    class={`block py-2 px-7 cursor-pointer ${
+                      location.pathname.includes("/agency-services")
+                        ? "text-customSkyBlue"
+                        : "text-gray-400"
+                    }`}
+                    aria-current="page"
+                  >
+                    Our Agency
+                  </div>
                 </li>
               </ul>
             </div>

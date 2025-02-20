@@ -9,7 +9,7 @@ import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
-    <div className="min-h-[100vh] scrollbar bg-[#fff] w-full">
+    <div className="min-h-[100vh] kanit-medium scrollbar bg-customBlack w-full overflow-hidden">
       <Nav />
       <Homepart1 />
       <Homepart3 />

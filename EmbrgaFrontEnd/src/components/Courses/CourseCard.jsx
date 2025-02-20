@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 const CourseCard = ({ imgUrl, title, desc, button, redirectLink }) => {
   const navigate = useNavigate();
   return (
-    <div className=" bg-white border max-h-[470px] border-gray-200 rounded-lg shadow dark:bg-[#061a3c] dark:border-gray-700">
+    <div className="bg-gradient-to-r from-[#00121C] via-[#01121A] via-[#01121A] via-[#02121a] via-[#02202B] to-[#11202e] max-h-[470px]  rounded-lg shadow  dark:border-gray-700">
       <a href="#">
         <img className="rounded-t-lg" src={imgUrl} alt="" />
       </a>
-      <div className="p-5">
+      <div className="p-5 flex flex-col  items-start justify-between">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#ffb802]">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-customGolden">
             {title}
           </h5>
         </a>
@@ -22,7 +22,7 @@ const CourseCard = ({ imgUrl, title, desc, button, redirectLink }) => {
             navigate(redirectLink ? `/courses/${redirectLink}` : "#"),
               setrespoNavSlide(false);
           }}
-          className="inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-customSkyBlue rounded-lg"
         >
           {button}
           {button === "Read More" && (

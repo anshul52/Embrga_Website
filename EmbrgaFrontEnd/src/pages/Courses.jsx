@@ -5,8 +5,8 @@ import CoursesList from "../components/Courses/CoursesList.jsx";
 
 const Courses = () => {
   return (
-    <div className="min-h-[100vh] scrollbar bg-[#fff] w-full">
-      <Nav/>
+    <div className="min-h-[100vh] scrollbar bg-customBlack w-full">
+      <Nav />
       <CoursesList />
       <Footer />
     </div>
