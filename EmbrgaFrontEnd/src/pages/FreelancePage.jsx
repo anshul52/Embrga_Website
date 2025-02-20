@@ -1,8 +1,9 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Header from "../components/FreelancePage/Header";
-// import Services from "../components/FreelancePage/Services";
+import Services from "../components/FreelancePage/Services";
 import Testimonials from "../components/FreelancePage/Testimonials";
+import SampleProjects from "../components/FreelancePage/SampleProjects.jsx";
 import RunningSlider from "../components/FreelancePage/RunningSlider";
 import Footer from "../components/Footer.jsx";
 
@@ -12,7 +13,8 @@ const FreelancePage = () => {
       <Nav />
       <Header />
       <RunningSlider />
-      {/* <Services /> */}
+      <Services />
+      <SampleProjects />
       <Testimonials />
       <Footer />
     </main>
