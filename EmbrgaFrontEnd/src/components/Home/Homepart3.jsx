@@ -14,8 +14,8 @@ const Homepart3 = () => {
             />
           </div>
         </div>
-        <section class="sm:w-[50%] w-full h-full">
-          <div class="home-section text-[#061a3c] h-full w-full  flex items-start justify-center flex-col px-5">
+        <section className="sm:w-[50%] w-full h-full">
+          <div className="home-section text-[#061a3c] h-full w-full  flex items-start justify-center flex-col px-5">
             <h2 className="sm:text-[35px] text-[15px] font-semibold mb-7 ">
               Where Coding Becomes a Lifestyle{" "}
             </h2>
@@ -27,7 +27,7 @@ const Homepart3 = () => {
               zero to coder in no time.
             </p>
 
-            <section class="mentors mb-4">
+            <section className="mentors mb-4">
               <h3 className="font-semibold flex items-center gap-2">
                 <GoDotFill /> Our Mentors
               </h3>
@@ -38,7 +38,7 @@ const Homepart3 = () => {
               </p>
             </section>
 
-            <section class="community">
+            <section className="community">
               <h3 className="font-semibold  flex items-center gap-2">
                 <GoDotFill /> Join Our Community
               </h3>
