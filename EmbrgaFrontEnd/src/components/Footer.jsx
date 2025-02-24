@@ -33,7 +33,7 @@ const Footer = () => {
                 Embrga
               </span>
             </div>
-            <div className="flex gap-4 mt-4 bg-[#0D1117] py-4  items-center">
+            <div className="flex gap-4 mt-4 py-4  items-center">
               {socialLinks?.map((item, index) => (
                 <a
                   key={index}
