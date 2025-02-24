@@ -1,6 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+  FaYoutube,
+} from "react-icons/fa";
+const socialLinks = [
+  { icon: <FaInstagram />, link: "https://www.instagram.com/embrga/" },
+  { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/embrga" },
+  { icon: <FaTwitter />, link: "#" },
+  { icon: <FaGithub />, link: "#" },
+  { icon: <FaYoutube />, link: "#" },
+];
 const Footer = () => {
   const navigate = useNavigate();
   return (
@@ -16,9 +29,20 @@ const Footer = () => {
                 src="https://Embrga.com/docs/images/logo.svg"
                 class="h-8 me-3"
               /> */}
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span class="text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Embrga
               </span>
+            </div>
+            <div className="flex gap-4 mt-4 bg-[#0D1117] py-4  items-center">
+              {socialLinks?.map((item, index) => (
+                <a
+                  key={index}
+                  href={item?.link}
+                  className="w-10 h-10 flex items-center border-[1px] border-gray-500 justify-center rounded-full bg-gray-800 text-gray-400 hover:text-white transition"
+                >
+                  {item?.icon}
+                </a>
+              ))}
             </div>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
