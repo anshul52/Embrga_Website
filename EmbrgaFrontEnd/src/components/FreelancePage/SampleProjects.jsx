@@ -6,7 +6,7 @@ const SampleProjects = () => {
       title: "Coinspe",
       description:
         "Developed with Next.js, Redux, and Tailwind CSS, featuring real-time market data, user authentication, trading interface, wallet management, and security measures.",
-      techStack: "React.js, Next.js, Node.js, MongoDB",
+      techStack: "Next.js, Node.js, MongoDB",
       liveDemo: "https://coinspe.com/",
     },
     {
@@ -20,14 +20,14 @@ const SampleProjects = () => {
       title: " Sheryians Coding School",
       description:
         "Sheryians Coding School is an educational platform offering courses in web development, coding, and design. ",
-      techStack: "React.js, Next.js, Node.js, MongoDB",
+      techStack: "React.js, Node.js, Postgres",
       liveDemo: "https://www.sheryians.com",
     },
     {
       title: "Bold Thread",
       description:
         "Bold-Thread is a web platform that offers personalized style recommendations and curated fashion selections to help users enhance their wardrobes.",
-      techStack: "Next.js, Tailwind CSS, Framer Motion",
+      techStack: "Next.js, Tailwind CSS, Framer Motion ,Node.js, MongoDB",
       liveDemo: "https://bold-thread.com",
     },
     {
@@ -57,6 +57,20 @@ const SampleProjects = () => {
         "A technology services platform offering AI and cloud solutions for businesses.",
       techStack: "Next.js, Tailwind CSS, Framer Motion",
       liveDemo: "https://elara.technology",
+    },
+    // {
+    //   title: "Subhx Technology",
+    //   description:
+    //     "A technology services platform Delivering advanced solutions in technology, healthcare, and finance to drive excellence.",
+    //   techStack: "Next.js, Tailwind CSS, Framer Motion",
+    //   liveDemo: "https://www.subhx.in",
+    // },
+    {
+      title: "Leapstrat Interactive",
+      description:
+        "A Online Digital Marketing services Provider Delivering advanced solutions in Digital Marketing.",
+      techStack: "Next.js, Tailwind CSS, Framer Motion",
+      liveDemo: "https://leapstrat.in",
     },
   ];
 
