@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="sm:h-[100vh] h-[80vh] overflow-hidden relative w-full">
-      <div className="sm:h-[40%] h-[30%] flex sm:items-end items-center justify-center ">
+    <div className="sm:h-[100vh] min-h-[80vh] overflow-hidden relative w-full flex flex-col justify-between">
+      <div className="sm:h-[40%] h-[30%] flex sm:items-end items-center justify-center">
         <h1 className="sm:text-[15vh] text-4xl bg-gray-700 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-700/10 kanit-medium sm:leading-[15vh] text-center ">
           Web Dev & <br /> Design Agency .
         </h1>
@@ -32,7 +32,7 @@ const Header = () => {
           />
         </div>
         <div className="text-gray-400  sm:text-right text-center sm:w-[33%] w-full  kanit-light sm:mb-[20vh] mb-[5vh]">
-          <p className="sm:text-2xl text-base">
+          <p className="sm:text-2xl text-sm">
             Specialize in crafting solutions <br /> that are not only
             aesthetically <br />
             pleasing but also optimized for <br /> performance and scalability.
