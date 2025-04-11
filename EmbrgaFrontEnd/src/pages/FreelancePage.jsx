@@ -5,6 +5,7 @@ import Services from "../components/FreelancePage/Services";
 import Testimonials from "../components/FreelancePage/Testimonials";
 import SampleProjects from "../components/FreelancePage/SampleProjects.jsx";
 import RunningSlider from "../components/FreelancePage/RunningSlider";
+import FreeAuditSection from "../components/FreelancePage/FreeAuditSection.jsx";
 import Footer from "../components/Footer.jsx";
 
 const FreelancePage = () => {
@@ -15,6 +16,7 @@ const FreelancePage = () => {
       <RunningSlider />
       <Services />
       <SampleProjects />
+      <FreeAuditSection />
       {/* <Testimonials /> */}
       <Footer />
     </main>

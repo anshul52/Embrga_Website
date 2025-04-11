@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="sm:h-[100vh] min-h-[80vh] overflow-hidden relative w-full flex flex-col justify-between">
       <div className="sm:h-[40%] h-[30%] flex sm:items-end items-center justify-center">
-        <h1 className="sm:text-[15vh] text-4xl bg-gray-700 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-700/10 kanit-medium sm:leading-[15vh] text-center ">
+        <h1 className="sm:text-8xl text-4xl bg-gray-700 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-700/10 kanit-medium sm:leading-[15vh] text-center ">
           Web Dev & <br /> Design Agency .
         </h1>
       </div>
